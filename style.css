@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f6f1eb, #ffffff);
+  color: #444;
+}
+
+header {
+  color: #6d4c41;
+  background: #e7c1925e;
+  backdrop-filter: blur(20px);
+  padding: 0.2rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-size: 20px;
+}
+
+.contenedor{
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background: url(fondo2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 90%;              /* ahora ocupa el 90% del ancho disponible */
+  max-width: 500px;        /* no pasa de 500px en pantallas grandes */
+  border: 1px solid white;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 30px;           /* un poco menos de padding para móviles */
+  box-shadow: 0 0 20px rgba(254, 255, 233, 0.527);
+  flex-direction: column;  /* asegura que los campos estén en columna */
+}
+
+.content label{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.content form{
+  width: 100%;
+  z-index: 1000;
+}
+
+.content h1{
+  font-size: 45px;
+  color: #725248;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.content div{
+  margin-bottom: 25px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.content textarea{
+  width: 100%;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.content textarea::placeholder{
+  color: rgb(43, 43, 43);
+}
+
+.input-box{
+  width: 100%;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+.input-box, 
+.content textarea {
+  width: 100%; 
+  font-size: 16px; 
+}
+
+.input-box::placeholder{
+  color: rgb(43, 43, 43);
+}
+
+.boton-enviar{
+  width: 100%;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffa601c5;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+}
+
+.boton-enviar:hover{
+  background-color: #ff9d2e;
+}
+
+.boton-enviar:active{
+  background-color: rgb(247, 221, 151);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #6d4c41;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b48a78;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 10%;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #6d4c41;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: #b48a78;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #8b5e50;
+}
+
+.productos {
+  padding: 40px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  background-color: #f8f0e5d8;
+}
+
+.producto {
+  flex: 1 1 200px;
+  max-width: 200px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(141, 137, 125, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.producto h3{
+  font-size: 18px;
+  color: rgb(211, 119, 83);
+  text-decoration: underline 2px;
+  text-underline-offset: 2px;
+}
+
+.producto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(141, 137, 125, 0.6);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.producto h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #6d4c41;
+}
+
+.producto p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  color: #6d4c41;
+}
+
+.producto button {
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+  height: 30px;
+  margin-top: 5px;
+  background-color: #f8debe;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.producto button:hover {
+  background-color: #f1cfa5;
+  box-shadow: 0 0 10px rgb(245, 217, 140);
+}
+
+footer {
+  background: #f8debe;
+  text-align: center;
+  padding: 2rem 10%;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 3rem 5%;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .productos {
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .producto:hover{
+    transform: translatey(0);
+  }
+
+  .producto {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+
+  .contenedor {
+    padding: 20px;
+    height: auto;  /* que no fuerce toda la altura en pantallas pequeñas */
+  }
+
+  .content {
+    padding: 20px;
+    width: 100%;       /* ocupa todo el ancho */
+    border-radius: 15px;
+  }
+
+  .content h1 {
+    font-size: 30px;   /* título más pequeño en móviles */
+    margin-bottom: 30px;
+  }
+
+  .boton-enviar {
+    font-size: 18px;
+    height: 45px;
+  }
+}

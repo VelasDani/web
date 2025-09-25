@@ -38,11 +38,11 @@ header {
   display: flex;
   justify-content: center;
   width: 90%;              /* ahora ocupa el 90% del ancho disponible */
-  max-width: 500px;        /* no pasa de 500px en pantallas grandes */
+  max-width: 400px;        /* no pasa de 500px en pantallas grandes */
   border: 1px solid white;
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  padding: 30px;           /* un poco menos de padding para móviles */
+  padding: 40px;           /* un poco menos de padding para móviles */
   box-shadow: 0 0 20px rgba(254, 255, 233, 0.527);
   flex-direction: column;  /* asegura que los campos estén en columna */
 }

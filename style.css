@@ -299,7 +299,6 @@ footer {
   }
 
   .contenedor {
-    padding: 20px;
     height: auto;  /* que no fuerce toda la altura en pantallas pequeñas */
   }
 
@@ -307,16 +306,35 @@ footer {
     padding: 20px;
     width: 70%;       /* ocupa todo el ancho */
     border-radius: 15px;
-    margin: 50px;
+    margin: 100px 10px 100px 10px;
+  }
+
+  .input-box{
+    font-size: 13px;
+  }
+
+  .content textarea{
+    font-size: 13px;
+  }
+  .content div{
+    margin-bottom: 15px;
+  }
+
+  .content label{
+    font-size: 18px;
+  }
+
+  .boton-enviar{
+    margin-top: 0;
   }
 
   .content h1 {
     font-size: 30px;   /* título más pequeño en móviles */
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .boton-enviar {
-    font-size: 18px;
+    font-size: 15px;
     height: 45px;
   }
 }

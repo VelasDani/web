@@ -233,7 +233,7 @@ nav a:hover {
 .producto button {
   border: none;
   border-radius: 10px;
-  width: 90%;
+  width: 80%;
   height: 30px;
   margin-top: 5px;
   background-color: #f8debe;
@@ -260,6 +260,10 @@ footer {
     text-align: center;
   }
 
+  header a{
+    font-size: 15px;
+  }
+
   .hero {
     padding: 3rem 5%;
   }
@@ -282,6 +286,18 @@ footer {
     max-width: none;
   }
 
+  .producto button{
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #f8debe;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
   .contenedor {
     padding: 20px;
     height: auto;  /* que no fuerce toda la altura en pantallas pequeñas */
@@ -289,8 +305,9 @@ footer {
 
   .content {
     padding: 20px;
-    width: 100%;       /* ocupa todo el ancho */
+    width: 70%;       /* ocupa todo el ancho */
     border-radius: 15px;
+    margin: 50px;
   }
 
   .content h1 {
